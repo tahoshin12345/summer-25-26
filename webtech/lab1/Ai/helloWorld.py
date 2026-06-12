@@ -1,0 +1,9 @@
+print("hello");
+a=10;
+b=12.4;
+c="hello";
+d=("bangladesh","india","pakistan");
+print(type(a));
+print(type(b));
+print(type(c));
+print(type(d));
