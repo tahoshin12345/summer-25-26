@@ -1,0 +1,15 @@
+h1{
+    color: rgb(255, 204, 0);
+    text-align: center;
+}
+body{
+    background-color: rgb(235, 247, 223);
+}
+input{
+    align-items: center;
+     border-radius: 5px;
+     background-color:rgba(0, 255, 255, 0);
+     border-color: brown;
+     color: rgb(26, 112, 186)
+     
+}
