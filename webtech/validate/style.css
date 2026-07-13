@@ -1,0 +1,18 @@
+
+div{
+    color: rgb(253, 5, 5);
+}
+body{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+
+    padding: 50px;    
+    border-radius:  5%;
+
+  border-style: solid;
+  background: rgb(254, 253, 253);
+  box-shadow: rgba(153, 152, 152, 0.484);
+
+}

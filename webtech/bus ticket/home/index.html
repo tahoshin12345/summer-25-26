@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Validation</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .form-container { max-width: 450px; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 0 auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input, textarea { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        .error-msg { color: #d9534f; font-size: 0.85rem; margin-top: 5px; min-height: 18px; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+        button:hover { background-color: #0056b3; }
+        #success-summary { display: none; margin-top: 20px; padding: 15px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Contact Registration</h2>
+    <form id="contactForm" novalidate>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <div class="error-msg" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <div class="error-msg" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number (11-digit Bangladeshi Format):</label>
+            <input type="text" id="phone" placeholder="e.g., 01712345678">
+            <div class="error-msg" id="phoneError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age (Must be 18 or older):</label>
+            <input type="number" id="age">
+            <div class="error-msg" id="ageError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject (Cannot contain numbers):</label>
+            <input type="text" id="subject">
+            <div class="error-msg" id="subjectError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4"></textarea>
+            <div class="error-msg" id="messageError"></div>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+
+    <div id="success-summary"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

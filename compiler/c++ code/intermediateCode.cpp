@@ -59,7 +59,7 @@ void generateTAC(string postfix) {
     for (int i = 0; i < postfix.length(); i++) {
         char ch = postfix[i];
         if (isalnum(ch)) {
-            string operand(1, ch);
+            string operand(2, ch);
             st.push(operand);
         }
         else {
